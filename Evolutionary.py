@@ -72,9 +72,18 @@ while True:
 		
 	if keyboard.is_pressed('q'):
 		break
+	if keyboard.is_pressed('r'):
+		placement = []
+		for i in range(100):
+			placement.append([random.randint(-360, 360), random.randint(-360, 360)])
 
+		for p in placement:
+			draw.goto(p)
+			draw.stamp()
+			wn.update()
 
 draw.clear()
+
 
 
 
@@ -168,9 +177,17 @@ def do_stuff():
 		if bEqual:
 			try:
 				best_set.pop(len(best_set)-1)
-				
 			except:
 				pass
+			try:
+				best_set.pop(len(best_set)-2)
+			except:
+				pass
+			try:
+				best_set.pop(len(best_set)-3)
+			except:
+				pass
+			
 
 		fitness_list = []
 		dot.goto(0, -300)
@@ -237,11 +254,17 @@ for moves in best_set:
 	time.sleep(0.05)
 
 
+print('completed in', generation, "generations")
+
 plt.xlabel('generation')
 plt.ylabel('fitness')
 plt.plot(plots_x, plot_y)
 plt.show()
 
 
+
+
 wn.mainloop()
+
+
 
