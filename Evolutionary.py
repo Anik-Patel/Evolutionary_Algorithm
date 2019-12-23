@@ -73,7 +73,7 @@ while True:
 	if keyboard.is_pressed('q'):
 		break
 	if keyboard.is_pressed('r'):
-		placement = []
+		
 		for i in range(100):
 			placement.append([random.randint(-360, 360), random.randint(-360, 360)])
 
