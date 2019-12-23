@@ -77,7 +77,6 @@ while True:
 draw.clear()
 
 
-goal.goto(0, 300)
 
 
 
