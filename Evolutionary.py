@@ -80,7 +80,25 @@ while True:
 		for p in placement:
 			draw.goto(p)
 			draw.stamp()
-			wn.update()
+		wn.update()
+		time.sleep(0.2)
+
+	if keyboard.is_pressed('c'):
+		placement = []
+		draw.clear()
+		wn.update()
+
+	if keyboard.is_pressed('z'):
+		try:
+			placement.pop(len(placement)-1)
+		except:
+			pass
+		draw.clear()
+		for p in placement:
+			draw.goto(p)
+			draw.stamp()
+		wn.update()
+		time.sleep(0.2)
 
 draw.clear()
 
@@ -265,6 +283,7 @@ plt.show()
 
 
 wn.mainloop()
+
 
 
 
