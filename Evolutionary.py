@@ -152,7 +152,7 @@ while True:
 
 		for i in range(20):
 
-			placement.append([random.randint(-200, 300), random.randint(-280, 300)])
+			placement.append([random.randint(-300, 300), random.randint(-280, 300)])
 
 
 
