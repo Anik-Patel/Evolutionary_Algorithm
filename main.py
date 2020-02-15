@@ -62,8 +62,6 @@ obstacle = 0
 
 
 
-
-
 g = Dot(RED, 20, 20)
 g.rect.x = 500
 g.rect.y = 100
