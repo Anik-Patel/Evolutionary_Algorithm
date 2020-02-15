@@ -1,9 +1,11 @@
 # Evolutionary_Algorithm
-An Evolutionary Algorithm created with python and turtle
+An Evolutionary Algorithm created with python and pygame
 
 An algorithm that find it's way to a goal
 
-To run just run the Evolutionary.py file
+To run, clone or download this repository and unzip if needed
+Install pygame using `pip install pygame` or `pip3 install pygame`
 
-Move the mouse around and press "A" to place an obstacle press "G" to place the goal. You can also press "R" to generate the obstacles randomly. "Z" to undo and "C" is to clear all.
-When you are done press "Q" and watch the AI learn!
+Then run `python main.py` or `python3 main.py`
+
+Enjoy!
